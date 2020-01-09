@@ -19,11 +19,11 @@
             <div class="left clearfix">
 
 
-                <button><i class="fas fa-chevron-left"></i>Precedente</button>
+                <button id="mese_prev"><i class="fas fa-chevron-left"></i>Precedente</button>
             </div>
             <div class="right clearfix">
 
-                <button>Successivo<i class="fas fa-chevron-right"></i></button>
+                <button id="mese_next">Successivo<i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </header>
@@ -31,6 +31,11 @@
         <ul id="calendario">
         </ul>
     </main>
+    <script id="giorno-template" type="text/x-hnaldebars-template">
+        <li> {{ day }} </li>
+    </script>
+
+    </script>
 
 </body>
 
