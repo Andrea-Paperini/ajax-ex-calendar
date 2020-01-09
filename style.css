@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-bottom: 2px solid red;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.navigation .left {
+    float: left;
+}
+
+.navigation .right {
+    float: right;
+}
+
+header h1 {
+    margin-bottom: 20px;
+}
+
+.navigation {
+    background-color: blue;
+    font-size: 20px;
+    padding: 10px 25px;
+}
+
+main {
+    width: 200px;
+    margin: 0 auto;
+}
+
+#calendario li {
+    margin: 10px 0;
+}
