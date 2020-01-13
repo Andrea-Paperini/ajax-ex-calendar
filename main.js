@@ -30,9 +30,8 @@ $(document).ready(function() {
     // Intercetto il click sul mese Precedente
     $("#mese_prev").click(function() {
         // controllo se la data diventa dell'anno precendente
-        if (moment_data.isSameOrBefore(fine_calendario)) {
+        if (moment_data.month() === 0) {
             // stampo un errore nel caso in cui la data non rientra nell'anno 2018
-
             alert("Mese non disponibile");
             $(this).prop("disabled", true);
         } else {
